@@ -135,7 +135,59 @@
         }
 
         @include tablet{
-          display: none;
+          position: fixed;
+          top: initial;
+          bottom: 0;
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0);
+          background-color: rgba(var(--bg-h),1.0);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+          height: 35px;
+          justify-content: space-between;
+          
+
+          .h2o-main-nav{
+            flex-wrap: nowrap;
+          }
+        }
+
+        @include small-tablet{
+          .h2o-main-nav{
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+            grid-gap: 10px;
+
+           &__link{
+            padding: 0;
+            grid-gap: 5px;
+
+            i{
+              width: 22px;
+              height: 22px;
+            }
+           }
+          }
+        }
+ 
+        @include mobile{
+          .h2o-main-nav{
+
+            &__item{
+              &:last-child{
+                display: none;
+              }
+            }
+
+            &__link{
+              padding: 0;
+              grid-gap: 8px;
+             }
+          }
+          .h2o-logo{
+            display: none;
+          }
         }
   }
 }

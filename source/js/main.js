@@ -5,6 +5,9 @@ const htmlEl = document.documentElement;
 const bodyEl = document.body;
 const mainSlider = document.querySelector(".h2o-main-slider");
 const subSlider = document.querySelector(".h2o-sub-slider");
+const overlay = document.querySelector("[data-overlay]");
+const mobileMenu = document.querySelector(".h2o-mobile-menu");
+const burgers = document.querySelectorAll(".h2o-burger");
 //------------------------------------------------
 
 //----customFunction------------------------------
@@ -268,3 +271,35 @@ const sub =
   }).mount();
 
 main && sub && main.sync(sub);
+
+
+//----burger------------------------------------
+const mobileMenuHandler = function (overlay, mobileMenu, burgers) {
+  burgers.forEach((burger) => {
+    burger.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleCustomClass(header, "active");
+      toggleCustomClass(mobileMenu);
+      toggleClassInArray(burgers);
+      toggleCustomClass(overlay);
+      burger.classList.contains("active") ? disableScroll() : enableScroll();
+    });
+  });
+};
+
+const hideMenuHandler = function (overlay, mobileMenu, burgers) {
+  removeCustomClass(mobileMenu);
+  removeClassInArray(burgers);
+  removeCustomClass(header, "active");
+  removeCustomClass(overlay);
+  enableScroll();
+};
+
+if (overlay) {
+  mobileMenuHandler(overlay, mobileMenu, burgers);
+  overlay.addEventListener("click", function (e) {
+    e.target.classList.contains("h2o-overlay")
+      ? hideMenuHandler(overlay, mobileMenu, burgers)
+      : null;
+  });
+}

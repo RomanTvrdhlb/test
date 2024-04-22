@@ -1,9 +1,16 @@
 footer{
-  padding: clamp(30px, 3.9246vw, 50px) 0;
   background-image: url(../img/sprite/bg-footer.svg), var(--gr-a);
   background-position: center 20px, 50%;
   background-repeat: no-repeat;
   background-size: contain, 100% 100%;
+
+  @include for-tablet{
+    padding: clamp(30px, 3.9246vw, 50px) 0;
+  }
+
+  @include tablet{
+    padding: clamp(30px, 3.9246vw, 50px) 0 calc(clamp(30px, 3.9246vw, 50px) + 35px);
+  }
 }
 
 .h2o-footer{
