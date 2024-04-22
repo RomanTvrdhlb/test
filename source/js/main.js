@@ -236,6 +236,9 @@ const main = mainSlider && new Splide(mainSlider, {
   pagination: false,
   arrows: false,
   perPage: 1,
+  autoplay: {
+    delay: 1500,
+  },
 
   breakpoints: {
     768: {
