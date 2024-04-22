@@ -1,0 +1,34 @@
+.h2o-first-section {
+  position: relative;
+
+  @media (min-width: (1500px)) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: (1500px)) {
+    @include for-small-tablet{
+      padding-bottom: 40px;
+    }
+  }
+
+  @include small-tablet{
+    padding-bottom: 20px;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+
+
+    .h2o-sub-slider{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(50%);
+    }
+  }
+
+  
+}

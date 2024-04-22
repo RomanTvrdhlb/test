@@ -1,0 +1,437 @@
+.h2o-icon {
+  &-logo {
+    height: clamp(67px, 6.8289vw, 87px);
+    width: clamp(67px, 6.8289vw, 87px);
+    display: block;
+    background-image: url(../img/sprite/logo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--mode {
+      background-image: url(../img/sprite/logo-mode.svg);
+      height: 29px;
+      width: 44px;
+    }
+  }
+
+  &-play {
+    background-color: rgba(var(--bg-d), 1);
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    width: 40px;
+    z-index: 2;
+
+    &:after {
+      border-color: transparent transparent transparent #e9417d;
+      border-style: solid;
+      border-width: 8px 0 8px 14px;
+      content: "";
+      height: 0;
+      left: 50%;
+      margin-left: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-games {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-image: url(../img/sprite/games.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-promo {
+    height: 34px;
+    width: 34px;
+    display: block;
+    background-image: url(../img/sprite/promo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-cup {
+    height: 34px;
+    width: 34px;
+    display: block;
+    background-image: url(../img/sprite/cup.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-search2 {
+    height: 34px;
+    width: 34px;
+    display: block;
+    background-image: url(../img/sprite/search2.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-ruby {
+    width: 56px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/index/ruby.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-spino {
+    width: 56px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/index/spinomenal.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-octa {
+    width: 56px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/index/octaplay.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-pragm {
+    width: 56px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/index/pragmatic.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-search {
+    width: 18px;
+    height: 16px;
+    display: block;
+    background-image: url(../img/sprite/search.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-visa {
+    display: block;
+    background-image: url(../img/sprite/pay.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    background-position: 0 -60px;
+    width: 57px;
+  }
+
+  &-ms {
+    display: block;
+    background-image: url(../img/sprite/pay.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 45px;
+    background-position: -102px -60px;
+  }
+
+  &-maestro {
+    display: block;
+    background-image: url(../img/sprite/pay.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 45px;
+    background-position: -57px -60px;
+  }
+
+  &-webmoney {
+    display: block;
+    background-image: url(../img/sprite/pay.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    background-position: -147px -60px;
+    width: 36px;
+  }
+
+  &-skrill {
+    display: block;
+    background-image: url(../img/sprite/pay.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    background-position: 0 -30px;
+    width: 87px;
+  }
+
+  &-neteller {
+    display: block;
+    background-image: url(../img/sprite/pay.svg);
+    background-repeat: no-repeat;
+    height: 30px;
+    background-position: 0 0;
+    width: 184px;
+  }
+
+  &-playmer {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -2240px;
+    width: 85px;
+    height: 30px;
+  }
+
+  &-highgame {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -1987px;
+    width: 85px;
+    height: 30px;
+  }
+
+  &-novomatic {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -232px;
+    width: 85px;
+    height: 30px;
+  }
+  &-caleta {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -342px;
+    width: 85px;
+    height: 35px;
+  }
+  &-fantasma {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -2176px;
+    width: 85px;
+    height: 30px;
+  }
+  &-ezugi {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -1955px;
+    width: 85px;
+    height: 30px;
+  }
+  &-turbogames {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -1833px;
+    width: 85px;
+    height: 30px;
+  }
+  &-mancalagaming {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px 0px;
+    width: 85px;
+    height: 30px;
+  }
+  &-gamzix {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -1698px;
+    width: 104px;
+    height: 27px;
+  }
+  &-1x2gaming {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -1791px;
+    width: 97px;
+    height: 40px;
+  }
+  &-amatic {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -411px;
+    width: 99px;
+    height: 30px;
+  }
+  &-bilatra {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -168px;
+    width: 85px;
+    height: 30px;
+  }
+  &-betgamstv {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -1449px;
+    width: 152px;
+    height: 33px;
+  }
+  &-betsoft {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -443px;
+    width: 99px;
+    height: 30px;
+  }
+  &-bf {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -475px;
+    width: 39px;
+    height: 30px;
+  }
+  &-bgaming {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -2208px;
+    width: 85px;
+    height: 30px;
+  }
+  &-btg {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -507px;
+    width: 118px;
+    height: 30px;
+  }
+  &-blueprint {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -539px;
+    width: 128px;
+    height: 30px;
+  }
+  &-bombay {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -32px;
+    width: 126px;
+    height: 40px;
+  }
+  &-boominggames {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0px -571px;
+    width: 88px;
+    height: 30px;
+  }
+
+  &-comodo {
+    display: block;
+    background-image: url(../img/index/comodo.png);
+    width: 113px;
+    height: 59px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-seal {
+    height: 65px;
+    width: 73px;
+    display: block;
+    background-image: url(../img/index/seal.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-curacao {
+    height: 65px;
+    width: 73px;
+    display: block;
+    background-image: url(../img/index/curacao.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-age {
+    display: block;
+    background-image: url(../img/index/all.png);
+    background-position: 0 0;
+    width: 53px;
+    height: 53px;
+  }
+
+  &-allgames {
+    display: block;
+    background-image: url(../img/sprite/icon.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-slots {
+    display: block;
+    background-image: url(../img/sprite/icon2.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-jackpots {
+    display: block;
+    background-image: url(../img/sprite/icon3.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-live {
+    display: block;
+    background-image: url(../img/sprite/icon4.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-boardgames {
+    display: block;
+    background-image: url(../img/sprite/icon5.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-drops {
+    display: block;
+    background-image: url(../img/index/wins.png);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-instant {
+    display: block;
+    background-image: url(../img/sprite/icon6.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &-poker {
+    display: block;
+    background-image: url(../img/sprite/icon7.svg);
+    width: 37px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

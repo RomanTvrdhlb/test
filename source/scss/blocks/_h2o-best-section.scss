@@ -1,0 +1,11 @@
+.h2o-best-section{
+    padding-bottom: clamp(30px, 4.0816vw, 52px);
+
+    &__box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(30px, 4.0816vw, 52px);
+    }
+
+}

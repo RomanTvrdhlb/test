@@ -1,0 +1,63 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+ 
+  --body-bg: #222;
+  --body-font-size: 16px;
+  --content-width: 1274px;
+  --content-width-mode: 1370px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-mode: calc(var(--content-width-mode) + (var(--container-offset) * 2));
+
+  @include small-tablet{
+    --container-offset: 15px;
+  }
+  // --------------- default JS variable ---------------
+    --header-height: 90px;
+
+    @include tablet{
+      --header-height: 54px;
+    }
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: rgba(var(--bg-h),1.0);
+  --scrollbar-track:  #18040d;
+  --scrollbar-track-hover: #18040d;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default font-family variable ---------------
+  --font-family: "Open-Sans" , sans-serif; // var(--font-family);
+
+// --------------- default text color variable ---------------
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#bfbfbf)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#a0a1a4)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#ffff00)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#e9417d)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#757575)}; // rgba(var(--cl-g),1.0);
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#302d28)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#ffff00)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#e9417d)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#13100e)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#082a38)}; // rgba(var(--bg-g),1.0);
+  --bg-h: #{HexToRGB(#1e727c)}; // rgba(var(--bg-h),1.0);
+  --bg-i: #{HexToRGB(#2b2a2a)}; // rgba(var(--bg-i),1.0);
+// --------------- default border color color variable ---------------
+  --br-a: #ff0; // var(--br-a);
+  --br-b: #fff; // var(--br-b);
+  --br-c: #302924; // var(--br-c);
+  --br-d: #424242; // var(--br-d);
+
+// --------------- default gradient color variable ---------------
+--gr-a: linear-gradient(180deg, #2a707d, #222); // var(--gr-a);
+}
+
+

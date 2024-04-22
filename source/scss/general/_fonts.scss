@@ -1,0 +1,17 @@
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-style: $style;
+    font-weight: #{$weight};
+    font-family: "#{$font-family}";
+
+    font-display: swap;
+    src: url("../fonts/#{$url}.woff2") format("woff2"),
+    url("../fonts/#{$url}.woff") format("woff");
+  }
+}
+
+@include font-face("Open-Sans", "Open-Sans-Regular", 400, normal);
+@include font-face("Open-Sans", "Open-Sans-Bold", 700, normal);
+@include font-face("Open-Sans", "Open-Sans-Extrabold", 800, normal);
+
+

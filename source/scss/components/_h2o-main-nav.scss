@@ -1,0 +1,128 @@
+.h2o-main-nav{
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(20px, 3.1397vw, 40px);
+
+    &__link{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        font-size: clamp(12px, 1.0332vw, 14px);
+        line-height: 100%;
+        color: rgba(var(--cl-a),1.0);
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        transition: all .4s;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+        padding: 25px 10px;
+
+        &:hover{
+            transform: scale(1.2);
+            color: rgba(var(--cl-e),1.0);
+        }
+    }
+
+    @include tablet{
+        @include for-mobile{
+            flex-wrap: wrap;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @include tablet{
+            @include for-mobile{
+                display: contents;
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+    }
+
+    &__search{
+        display: flex;
+        align-items: center;
+        grid-gap: 8px;
+        padding: 0 8px;
+        background: rgba(var(--bg-g),1.0);
+        transition: all .3s;
+        min-height: 36px;
+        max-width: 204px;
+        position: relative;
+        background-color: rgba(var(--bg-i),1.0);
+        border: 1px solid var(--br-d);
+        
+        &:hover{
+            background: rgba(var(--bg-c),1.0);
+        }
+
+        @include mobile{
+            width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    &__input{
+        font-family: var(--font-family);
+        color: rgba(var(--cl-a),1.0);
+        font-size: 12px;
+        line-height: 110%;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        width: 100%;
+        padding: 0 clamp(5px, 1.1774vw, 15px);
+        font-family: var(--font-family);
+        color: rgba(var(--cl-a),1.0);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        flex-grow: 0;
+        transition: all .3s ease;
+        white-space: nowrap;
+
+        &:hover{
+            color: rgba(var(--cl-e),1.0);
+            transform: scale(1.2);
+        }
+
+        i{
+            height: 24px;
+        }
+    }
+
+    &__inner{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        @include mobile{
+            width: 100%;
+        }
+       
+    }
+
+    &--mode{
+        align-items: flex-start;
+        grid-gap: clamp(8px, 1.1774vw, 15px);
+    }
+}

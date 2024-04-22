@@ -1,0 +1,46 @@
+.h2o-main-box{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+
+    p{
+      color: rgba(var(--cl-a),1.0);
+      font-size: 14px;
+      line-height: 110%;
+      font-family: var(--font-family);
+      font-weight: 400;
+      
+      b{
+        font-weight: 700;
+      }
+    }
+    
+    img{
+      display: flex;
+      align-self: center;
+    }
+
+    button{
+      color: rgba(var(--cl-e),1.0);
+      text-decoration: underline;
+      font-family: var(--font-family);
+      font-size: 14px;
+      line-height: 110%;
+      font-weight: 400;
+      transition: all .3s;
+      text-underline-offset: 3px;
+
+      &:hover{
+        color: rgba(var(--cl-e),.7);
+      }
+    }
+
+    &--mode{
+      grid-gap: 0;
+
+      .h5,h6{
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+}

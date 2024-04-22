@@ -1,0 +1,53 @@
+.h2o-sub-slider{
+
+
+    &__slide{
+    display: flex;
+    align-items: flex-end;
+ 
+
+        &.is-active{
+            border: none !important;
+            
+            .h2o-sub-slider__box{
+                transform: scale(0.8) translateY(10%);
+                &::before{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    &__box{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: all .4s;
+
+        &::before{
+            background-color: rgba(var(--bg-b),.4);
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            content: '';
+            transition: all .3s;
+        }
+    }
+
+    &__btn{
+        position: absolute;
+        inset: 0;
+    }
+
+    &__image{
+        img,picture{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @include small-tablet{
+        display: none;
+    }
+}
